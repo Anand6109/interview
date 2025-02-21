@@ -1,10 +1,10 @@
 const express = require("express");
-const dotenv = require("dotenv");
+
 const { fetchAndStorePosts } = require("./controller");
 const app = express();
 const connectdb = require("./db");
 
-dotenv.config();
+
 app.use(express.json());
 
 
